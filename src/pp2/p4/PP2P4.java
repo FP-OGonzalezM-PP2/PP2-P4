@@ -17,8 +17,11 @@ public class PP2P4 {
     public static void main(String[] args) {
         // TODO code application logic here
         double g, f;
+        //use un metodo para pedir la variable
         f = pedirGrados();
+        //otro metodo para calcularla
         g = Calcular(f);
+        //y un ultimo metodo para mostarlo al usuario
         Mostrar(f,g);
     }
     public static double pedirGrados (){
@@ -30,6 +33,7 @@ public class PP2P4 {
     }
     public static double Calcular(double g){
         double fahrenheit;
+        //esta es la formula para convertir los grados centigrados a fahrenheit
         fahrenheit = g * (9/5) + 32;
         return fahrenheit;
     }
